@@ -1,4 +1,7 @@
 [![CI](https://github.com/joy7758/langchain-pop/actions/workflows/test.yml/badge.svg)](https://github.com/joy7758/langchain-pop/actions/workflows/test.yml)
+[![PyPI version](https://img.shields.io/pypi/v/langchain-pop.svg)](https://pypi.org/project/langchain-pop/)
+[![Python versions](https://img.shields.io/pypi/pyversions/langchain-pop.svg)](https://pypi.org/project/langchain-pop/)
+[![License](https://img.shields.io/pypi/l/langchain-pop.svg)](https://pypi.org/project/langchain-pop/)
 
 # langchain-pop
 
@@ -25,13 +28,13 @@ This package currently demonstrates runtime integration and middleware behavior.
 ### Minimal install
 
 ```bash
-pip install -e .
+pip install langchain-pop
 ```
 
 ### With OpenAI provider support
 
 ```bash
-pip install -e ".[openai]"
+pip install "langchain-pop[openai]"
 ```
 
 ## Quick Start
@@ -153,6 +156,12 @@ Run demo:
 
 ```bash
 python examples/langchain_middleware_demo.py --print-config
+```
+
+For local editable development:
+
+```bash
+pip install -e .
 ```
 
 ## Relationship to POP
