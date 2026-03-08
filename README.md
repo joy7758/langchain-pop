@@ -4,7 +4,7 @@
 
 `langchain-pop` is a preview middleware package that brings portable persona objects into LangChain agent runtimes.
 
-It allows POP persona objects to be loaded into LangChain, injected as runtime persona framing, and enforced through boundary-aware tool filtering. The package is designed as an ecosystem integration for the Persona Object Protocol (POP), not as a replacement for LangChain's own agent abstractions.
+It allows POP persona objects to be loaded into LangChain, injected as runtime persona framing, and enforced through boundary-aware tool filtering. The package is designed as a middleware and toolkit-style ecosystem integration for the Persona Object Protocol (POP), not as a replacement for LangChain's own agent abstractions.
 
 ## Status
 
@@ -71,7 +71,7 @@ python examples/langchain_middleware_demo.py --print-config
 - persona boundaries -> runtime tool filtering
 - POP identity fields -> runtime persona state
 
-This makes persona handling more structured than ad hoc prompt-only role injection.
+This makes persona handling more structured than ad hoc prompt-only role injection and aligns the integration with a toolkit-style runtime workflow instead of a thin adapter layer.
 
 ## Example: Middleware Preview
 
@@ -112,6 +112,13 @@ It is not:
 - a complete interoperability standard
 
 Its purpose is to demonstrate that POP persona objects can function as runtime-integrated persona middleware in a real agent stack.
+
+## Docs PR Draft
+
+The repository includes a docs-PR-oriented draft page in two forms:
+
+- [`docs/langchain_pop.mdx`](docs/langchain_pop.mdx): toolkit-oriented draft matching the LangChain docs naming style
+- [`docs/langchain-docs-pr-draft.md`](docs/langchain-docs-pr-draft.md): local draft copy for iterative editing
 
 ## Repository Structure
 
